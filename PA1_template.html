@@ -87,6 +87,7 @@ xyplot(steps ~ interval, stepsPattern, type = 'l',
 </div>
 <div id="imputing-missing-values" class="section level2">
 <h2>Imputing missing values</h2>
+<p>Filling NAs with average daily activity pattern of each interval.</p>
 <pre class="r"><code>NAsLoc &lt;- which(is.na(dat$steps))
 NAsNum &lt;- length(NAsLoc)
 dat2 &lt;- dat

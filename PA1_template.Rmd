@@ -44,6 +44,7 @@ The 5-minute interval of `r maxInterval` contains the maximum number of steps on
 
 ## Imputing missing values
 
+Filling NAs with average daily activity pattern of each interval.
 ```{r simulateData}
 NAsLoc <- which(is.na(dat$steps))
 NAsNum <- length(NAsLoc)

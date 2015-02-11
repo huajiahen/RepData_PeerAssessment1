@@ -52,6 +52,7 @@ The 5-minute interval of 835 contains the maximum number of steps on average acr
 
 ## Imputing missing values
 
+Filling NAs with average daily activity pattern of each interval.
 
 ```r
 NAsLoc <- which(is.na(dat$steps))
